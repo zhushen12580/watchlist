@@ -6,9 +6,9 @@ from flask import url_for, escape
 # def hello():
 #     return 'Hello'
 
-# @app.route('/user/<name>')
-# def user_page(name):
-#     return 'User: %s' % escape(name)
+@app.route('/user/<name>')
+def user_page(name):
+    return 'User: %s' % escape(name)
 
 # @app.route('/test')
 # def test_url_for():
